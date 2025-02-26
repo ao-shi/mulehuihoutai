@@ -96,7 +96,7 @@
 
     <el-table v-loading="loading" :data="withdrawList" @selection-change="handleSelectionChange">
       <el-table-column type="selection" width="55" align="center" />
-      <el-table-column label="ID" align="center" prop="id" />
+      <el-table-column type="index" :index="1" label="ID" align="center" prop="id" />
       <el-table-column label="用户" align="center" prop="userId" />
       <el-table-column label="提现金额" align="center" prop="amount" />
       <el-table-column label="开户银行" align="center" prop="bank" />
